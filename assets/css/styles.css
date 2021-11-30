@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header .logo{
+font-size: 20px;
+font-weight: bold;
+color: white;
+
+}
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line{
+    height: 3px;
+    background-color: rgb(7, 2, 15);
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.container .leftside{
+    background-color: #415d7c;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .rightside{ 
+    flex: 1;
+    background-image:  url('../images/eu.JPEG');
+    background-size: cover;
+    background-position: center top;
+    
+}
+.container .info{
+color: white;
+}
+.container .info .profession{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    }
+.container .info .name{
+
+font-size: 70px;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+.container .info .buttons a {
+    display: inline-block;
+    background-color: white;
+    color: #415d7c;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.container .info .buttons a.ligth {
+color: #fff;
+background-color: #415d7c;
+
+}
+.container .info .buttons a:hover{
+opacity: 0.8;
+}
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+
+}
+
+@media (max-width: 831px){
+    header {
+        position: initial;
+        background-color: #415d7c;
+    }
+    header .menu-line{
+        background-color: ivory;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .container .leftside {
+
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    footer {
+
+        position: initial;
+        color: #333;
+    }
+}
+@media (max-width: 390px){
+
+    .container .leftside .info .name {
+        font-size: 40px;
+
+    }
+    .container .leftside .info .buttons a {
+
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+    } 
+
+
+    
+}
+
+
